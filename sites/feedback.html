@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rezepte :)</title>
+        <link rel="stylesheet" href="../style/style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <button><img src="../images/logo.png" alt="Logo" id="logo"></button>
+                <!-- TODO: Hauptmahlzeit usw als Dropdowns -->
+                <button>Hauptmahlzeit</button>
+                <button>Snack</button>
+                <button>Dessert</button>
+            </nav>
+        </header>
+        <main>
+            <!--TODO: Mailto ändern, dasss es mir einfach eine Mail mit Feedback schickt, ohne dass Mensch Mail öffnen muss; Skript?
+                      Oder gucken, dass wie Kommentar auf Website erscheint mit Backend usw-->
+            <form action="mailto:luravn81@gmail.com" method="post" enctype="application/x-www-form-urlencoded">
+                <h1>Feedback</h1> 
+                <!--Name für Feedback-->
+                <label for="name"><h3>Name</h3></label>
+                <input type="text" id="name" name="name" required>
+                <!--Auswahl, ob Feedback für Rezept oder allgemein-->
+                <h3>Feedback für *</h3>
+                <label for="recipe">Rezept</label>
+                <input type="radio" id="recipe" name="feedbackFor" value="recipe" required>
+                <label for="overall">Allgemein</label>
+                <input type="radio" id="overall" name="feedbackFor" value="overall" required>
+                <!--TODO: JavaScript, dass Rezept required ist, falls feedbackFor = recipe-->
+                <!--Rezept, falls Feedback für Rezept-->
+                <label for="recipeName"><h3>Rezept</h3></label>
+                <select id="recipeName" name="recipeName">
+                    <!--TODO: Rezepte, welche actually auf Seite sind einfüllen-->
+                    <option value="" disabled selected>Rezept auswählen</option>
+                    <optgroup label="Hauptmahlzeit">
+                        <option value="Rezept 1">Rezept 1</option>
+                        <option value="Rezept 2">Rezept 2</option>
+                    </optgroup>
+                    <optgroup label="Snack">
+                        <option value="Rezept 1">Rezept 1</option>
+                        <option value="Rezept 2">Rezept 2</option>
+                    </optgroup>
+                    <optgroup label="Dessert">
+                        <option value="Rezept 1">Rezept 1</option>
+                        <option value="Rezept 2">Rezept 2</option>
+                    </optgroup>
+                </select>
+                <!--Feedback-->
+                <label for="feedback"><h3>Feedback *</h3></label>
+                <textarea id="feedback" name="feedback" required></textarea>
+                <!--Sendebutton-->
+                <input type="submit" value="Feedback senden">
+                <p>Alle Felder, welche mit * markiert sind, sind Pflichtfelder</p>
+            </form>
+        </main>
+        <footer>
+            <p>By <a href="https://github.com/LunaRaven81">LunaRaven81</a></p>
+            <nav>
+                <button>About</button>
+                <button>Feedback</button>
+            </nav>
+        </footer>
+    </body>
+
+</html>

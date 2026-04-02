@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rezepte :)</title>
+        <link rel="stylesheet" href="../style/style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <button><img src="../images/logo.png" alt="Logo" id="logo"></button>
+                <!-- TODO: Hauptmahlzeit usw als Dropdowns -->
+                <button>Hauptmahlzeit</button>
+                <button>Snack</button>
+                <button>Dessert</button>
+            </nav>
+        </header>
+        <main>
+            <!--TODO: Potenziell Passwortregeln definieren-->
+            <form action="../index.html">
+                <label for="username"><h3>Benutzername</h3></label>
+                <input type="text" id="username" name="username" required>
+                <label for="password"><h3>Passwort</h3></label>
+                <input type="password" id="password" name="password" required>
+                <!--Sendebutton-->
+                <input type="submit" value="Anmelden">
+            </form>
+            <a href="password_reset.html" id="passwordReset">Passwort vergessen</a>
+        </main>
+        <footer>
+            <p>By <a href="https://github.com/LunaRaven81">LunaRaven81</a></p>
+            <nav>
+                <button>About</button>
+                <button>Feedback</button>
+            </nav>
+        </footer>
+    </body>
+
+</html>
