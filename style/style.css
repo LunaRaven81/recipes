@@ -1,3 +1,381 @@
+/* Allgemeine Textdinge (z.B. grösse und Farbe) */
+h1 {
+    font-size: 2.5rem;
+    color: #04139E;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.subtext {
+    font-size: 0.8rem;
+    color: rgb(89, 89, 89);
+    margin-top: -1em;
+}
+
+a.meal {
+    text-decoration: none;
+    color: black;
+}
+
+a.meal:hover {
+    cursor: pointer;
+}
+
+
+/* Layout allgemein grösser (dass es einen Dinorand gibt) */
+html {
+    padding: none;
+    margin: none;
+    height: 100vh;
+    overflow-x: hidden;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    line-height: 1.5em;
+}
+
+body {
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../images/style/background.png');
+    background-size: cover;
+    background-repeat: repeat;
+    padding: none;
+    margin: none;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+main {
+    width: 70vw;
+    background-color: white;
+    padding: 2em;
+    margin: none;
+    flex: 1;
+}
+
+main.login {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    width: 50vw;
+}
+
+
+/* Spezifischere Formatierungen für diverse Elemente */
+/* Spezifische Formatänderung für das "Viel Spass beim Kochen" */
+#funCooking {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #5B6AFB;
+    font-weight: bold;
+}
+
+#favourites {
+    text-align: center;
+    margin-top: 20vh;
+}
+
+/* Änderung von Login-Button im Vergleich zu anderen Buttons */
+#login {
+    background-color: #5B6AFB;
+    color: white;
+    font-family: inherit;
+    font-size: 1.3rem;
+    border: none;   
+    padding: 0.5em;
+}
+
+#login:hover {
+    border: 1px solid black
+}
+
+/* Formatierung für die Article-Elemente */
+article {
+    padding: 2em;
+}
+
+.meal:nth-of-type(2n) article {
+    background-color: #CACFFE;
+    flex-direction: row;
+} 
+
+article section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    gap: 2em;
+}
+
+.meal:nth-of-type(2n) article section {
+    flex-direction: row;
+}
+
+/* Formatierung für die Formulare */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+input, option, optgroup, select, textarea {
+    padding: 0.5em;
+    background-color: #CACFFE;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid #5B6AFB;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #5B6AFB;
+}
+
+input[type="radio"]:focus {
+    outline: none;
+}
+
+input[type="radio"]:checked {
+    accent-color: #04139E;
+}
+
+textarea {
+    height: 5em;
+}
+
+input[type="submit"] {
+    background-color: #04139E;
+    color: white;
+    font-family: inherit;
+    font-size: 1.3rem;
+    border: none;
+    margin-top: 1em;
+}
+
+
+/* Formatierung für den Header und den Footer */
+header, footer {
+    background-color: #04139E;
+    color: white;
+    width: 100vw;
+    height: 15vh;
+    padding: 1em;
+    margin: none;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#burgernav {
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+}
+
+footer button, header button {
+    background-color: #04139E;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-size: 1.3rem;
+}
+
+footer button {
+    margin-left: 1em;
+}
+
+footer button:hover, header button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Alle Formatierungen, die mit Bildern zu tun haben */
+img {
+    width: 20vw;
+    height: auto;
+}
+
 #logo {
-    width: 10vw;
+    height: 7vh;
+    width: auto;
+}
+
+
+/* Spezifisches Gridlayout für die Bilder der Galerie */
+.grid {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    justify-content: center;
+    grid-gap: 3vw;
+}
+
+.grid img {
+    width: 20vw;
+    height: auto;
+}
+
+.grid img:hover {
+    filter: brightness(69%);
+    cursor: pointer;
+}
+
+#burgerbutton img {
+    height: 7vh;
+    width: auto;
+}
+
+/* Media Queries für responsive Design */
+@media (max-width: 1180px) {
+    header button:not(.mobileToo) {
+        display: none;
+    }
+    #burgernav {
+        display: inline;
+        position: static;
+    }
+    header nav {
+        justify-content: space-between;
+    }
+    #burgermenu {
+        display: none;
+    }
+    header nav #burgernav:hover #burgermenu {
+        display: block;
+        position: absolute;
+        top: 3em;
+        right: 0.2em;
+        background-color: #5B6AFB;
+    }
+    header nav #burgernav:hover #burgermenu li {
+        list-style: none;
+    }
+    header nav #burgernav:hover #burgermenu button {
+        background-color: #5B6AFB;
+        border: none;
+        color: white;
+        font-family: inherit;
+        font-size: 1.3rem;
+        padding: 0.2em;
+        padding-right: 1em;
+        text-align: right;
+    }
+}
+
+@media (max-width: 900px) {
+    article section {
+        flex-wrap: wrap;
+    }
+    img {
+        width: 40vw;
+        height: auto;
+    }
+    .meal article section {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 1.2rem;
+    }
+    body {
+        text-align: center;
+    }
+    img { 
+        width: 60vw;
+    }
+    .grid {
+        grid-template-columns: 30vw 30vw;
+    }
+    .grid img {
+        width: 30vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 84vw;
+    }
+    .grid {
+        grid-gap: 10vw;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .subtext {
+        color: rgb(166, 166, 166);
+    }
+    h1 {
+        font-size: 2.5rem;
+        color: #CACFFE;
+    }
+    a {
+        color: lightblue;
+    }
+    a.meal {
+        color: white;
+    }
+    main {
+        background-color: rgb(70,70,70);
+        color: white;
+    }
+    body {
+        background-image: url('../images/style/background_dark.png');
+    }
+    .meal:nth-of-type(2n) article {
+        background-color: #04119E;
+    } 
+    input, option, optgroup, select, textarea {
+        background-color: #04139E;
+        color: white;
+    }
+    input[type="submit"] {
+        background-color: #CACFFE;
+        color: black;
+    }
 }

@@ -11,20 +11,34 @@
     <body>
         <header>
             <nav>
-                <button><img src="../images/logo.png" alt="Logo" id="logo"></button>
+                <button id="home" class="mobileToo"><img src="../images/style/logo.png" alt="Logo" id="logo"></button>
                 <!-- TODO: Hauptmahlzeit usw als Dropdowns -->
-                <button>Hauptmahlzeit</button>
-                <button>Snack</button>
-                <button>Dessert</button>
+                <button id="main">Hauptmahlzeit</button>
+                <button id="snack">Snack</button>
+                <button id="dessert">Dessert</button>
+                <button id="galery">Galerie</button>
+                <button id="login">Login</button>
+                <section id="burgernav">
+                    <button id="burgerbutton" class="mobileToo"><img src="../images/style/menu.png" alt="Menu"></button>
+                    <div id="burgermenu">
+                        <ul>
+                            <li><button id="mobileMain" class="mobileToo">Hauptmahlzeit</button></li>
+                            <li><button id="mobileSnack" class="mobileToo">Snack</button></li>
+                            <li><button id="mobileDessert" class="mobileToo">Dessert</button></li>
+                            <li><button id="mobileGalery" class="mobileToo">Galerie</button></li>
+                            <li><button id="mobileLogin" class="mobileToo">Login</button></li>
+                        </ul>
+                    </div>
+                </section>
             </nav>
         </header>
         <main>
             <!--TODO: Mailto ändern, dasss es mir einfach eine Mail mit Feedback schickt, ohne dass Mensch Mail öffnen muss; Skript?
                       Oder gucken, dass wie Kommentar auf Website erscheint mit Backend usw-->
-            <form action="mailto:luravn81@gmail.com" method="post" enctype="application/x-www-form-urlencoded">
+            <form action="../index.html">
                 <h1>Feedback</h1> 
                 <!--Name für Feedback-->
-                <label for="name"><h3>Name</h3></label>
+                <label for="name"><h3>Name *</h3></label>
                 <input type="text" id="name" name="name" required>
                 <!--Auswahl, ob Feedback für Rezept oder allgemein-->
                 <h3>Feedback für *</h3>
@@ -39,21 +53,18 @@
                     <!--TODO: Rezepte, welche actually auf Seite sind einfüllen-->
                     <option value="" disabled selected>Rezept auswählen</option>
                     <optgroup label="Hauptmahlzeit">
-                        <option value="Rezept 1">Rezept 1</option>
-                        <option value="Rezept 2">Rezept 2</option>
+                        <option value="Cannelloni">Cannelloni</option>
+                        <option value="Knoblauch-Sahne-Spaghetti">Knoblauch-Sahne-Spaghetti</option>
+                        <option value="Flammkuchen">Flammkuchen</option>
                     </optgroup>
                     <optgroup label="Snack">
-                        <option value="Rezept 1">Rezept 1</option>
-                        <option value="Rezept 2">Rezept 2</option>
                     </optgroup>
                     <optgroup label="Dessert">
-                        <option value="Rezept 1">Rezept 1</option>
-                        <option value="Rezept 2">Rezept 2</option>
                     </optgroup>
                 </select>
                 <!--Feedback-->
-                <label for="feedback"><h3>Feedback *</h3></label>
-                <textarea id="feedback" name="feedback" required></textarea>
+                <label for="feedbacktext"><h3>Feedback *</h3></label>
+                <textarea id="feedbacktext" name="feedbacktext" required></textarea>
                 <!--Sendebutton-->
                 <input type="submit" value="Feedback senden">
                 <p>Alle Felder, welche mit * markiert sind, sind Pflichtfelder</p>
@@ -62,10 +73,11 @@
         <footer>
             <p>By <a href="https://github.com/LunaRaven81">LunaRaven81</a></p>
             <nav>
-                <button>About</button>
-                <button>Feedback</button>
+                <button id="about">About</button>
+                <button id="feedback">Feedback</button>
             </nav>
         </footer>
+        <script src="../scripts/script.js"></script>
     </body>
 
 </html>

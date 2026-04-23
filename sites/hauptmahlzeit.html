@@ -11,52 +11,78 @@
     <body>
         <header>
             <nav>
-                <button><img src="../images/logo.png" alt="Logo" id="logo"></button>
+                <button id="home" class="mobileToo"><img src="../images/style/logo.png" alt="Logo" id="logo"></button>
                 <!-- TODO: Hauptmahlzeit usw als Dropdowns -->
-                <button>Hauptmahlzeit</button>
-                <button>Snack</button>
-                <button>Dessert</button>
+                <button id="main">Hauptmahlzeit</button>
+                <button id="snack">Snack</button>
+                <button id="dessert">Dessert</button>
+                <button id="galery">Galerie</button>
+                <button id="login">Login</button>
+                <section id="burgernav">
+                    <button id="burgerbutton" class="mobileToo"><img src="../images/style/menu.png" alt="Menu"></button>
+                    <div id="burgermenu">
+                        <ul>
+                            <li><button id="mobileMain" class="mobileToo">Hauptmahlzeit</button></li>
+                            <li><button id="mobileSnack" class="mobileToo">Snack</button></li>
+                            <li><button id="mobileDessert" class="mobileToo">Dessert</button></li>
+                            <li><button id="mobileGalery" class="mobileToo">Galerie</button></li>
+                            <li><button id="mobileLogin" class="mobileToo">Login</button></li>
+                        </ul>
+                    </div>
+                </section>
             </nav>
         </header>
-        <main>
+        <main class="meal">
             <h1>Hauptmahlzeiten</h1>
             <!--TODO: Actually richtige Links einfügen-->
-            <!--TODO: Rezepte übernehmen aus Collection-->
-            <a href="rezept1.html">
+            <a class="meal">
                 <article>
-                    <h2>Pfannenlasagne</h2>
-                    <p>Basically Lasagne, einfach nur mit einem Topf und in schnell.</p>
-                    <p>Dauer: 30 min</p>
-                    <p>Schwierigkeit: Einfach</p>
-                    <img src="../images/rezept1.jpg" alt="Pfannenlasagne">
+                    <h2>Cannelloni</h2>
+                    <section>
+                        <div>
+                            <p>Gefüllte Nudeln. Mit Käse überbacken. Ähnlich wie Lasagne, nur in runden Nudeln.</p>
+                            <p>Dauer: 120 min</p>
+                            <p>Schwierigkeit: Schwer</p>
+                        </div>
+                        <img src="../images/cannelloni.jpg" alt="Cannelloni">
+                    </section>
                 </article>
             </a>
-            <a href="rezept2.html">
+            <a class="meal">
                 <article>
-                    <h2>Knoblauchbutter-Spaghetti</h2>
-                    <p>Spaghetti mit viiiiieeeeel Knoblauch, schmeckt cremig-würzig. Hat am Schluss so eine Knoblauch-Sahnesauce.</p>
-                    <p>Dauer: 30 min</p>
-                    <p>Schwierigkeit: Einfach</p>
-                    <img src="../images/rezept2.jpg" alt="Knoblauchbutter-Spaghetti">
+                    <h2>Knoblauch-Sahne-Spaghetti</h2>
+                    <section>
+                        <div>
+                            <p>Spaghetti mit viiiiieeeeel Knoblauch, schmeckt cremig-würzig. Hat am Schluss so eine Knoblauch-Sahnesauce.</p>
+                            <p>Dauer: 30 min</p>
+                            <p>Schwierigkeit: Einfach</p>
+                        </div>
+                        <img src="../images/knoblauch_spaghetti.jpg" alt="Knoblauchbutter-Spaghetti">
+                    </section>
                 </article>
             </a>
-            <a href="rezept3.html">
+            <a class="meal">
                 <article>
                     <h2>Flammkuchen</h2>
-                    <p>Flammkuchen. Also ein Basci-Flammkuchen. Der kann dann belegt werden, wie Mensch möchte. Ich habe meine zwei liebsten Varianten aufgeschrieben.</p>
-                    <p>Dauer: 20 min</p>
-                    <p>Schwierigkeit: Sehr einfach</p>
-                    <img src="../images/rezept3.jpg" alt="Flammkuchen">
+                    <section>
+                        <div>
+                            <p>Flammkuchen. Also ein Basic-Flammkuchen. Der kann dann belegt werden, wie Mensch möchte. Ich habe meine zwei liebsten Varianten aufgeschrieben.</p>
+                            <p>Dauer: 20 min</p>
+                            <p>Schwierigkeit: Sehr einfach</p>
+                        </div>
+                        <img src="../images/flammkuchen.jpg" alt="Flammkuchen">
+                    </section>
                 </article>
             </a>
         </main>
         <footer>
             <p>By <a href="https://github.com/LunaRaven81">LunaRaven81</a></p>
             <nav>
-                <button>About</button>
-                <button>Feedback</button>
+                <button id="about">About</button>
+                <button id="feedback">Feedback</button>
             </nav>
         </footer>
+        <script src="../scripts/script.js"></script>
     </body>
 
 </html>
