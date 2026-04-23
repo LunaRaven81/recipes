@@ -6,7 +6,7 @@ let buttonFeedback = document.getElementById("feedback");
 let buttonLogin = document.getElementById("login");
 
 buttonHome.addEventListener("click", () => {
-    if (window.location.pathname.endsWith("index.html")) {
+    if (window.location.pathname.endsWith("recipes/")) {
         window.location.href = 'index.html';
     }
     else {
@@ -15,7 +15,7 @@ buttonHome.addEventListener("click", () => {
 });
 
 buttonMain.addEventListener("click", () => {
-    if (window.location.pathname.endsWith("index.html")) {
+    if (window.location.pathname.endsWith("recipes/")) {
         window.location.href = 'sites/hauptmahlzeit.html';
     }
     else {
@@ -24,7 +24,7 @@ buttonMain.addEventListener("click", () => {
 });
 
 buttonGalery.addEventListener("click", () => {
-    if (window.location.pathname.endsWith("index.html")) {
+    if (window.location.pathname.endsWith("recipes/")) {
         window.location.href = 'sites/galery.html';
     }
     else {
@@ -34,7 +34,7 @@ buttonGalery.addEventListener("click", () => {
 
 
 buttonAbout.addEventListener("click", () => {
-    if (window.location.pathname.endsWith("index.html")) {
+    if (window.location.pathname.endsWith("recipes/")) {
         window.location.href = 'sites/about.html';
     }
     else {
@@ -43,7 +43,7 @@ buttonAbout.addEventListener("click", () => {
 });
 
 buttonFeedback.addEventListener("click", () => {
-    if (window.location.pathname.endsWith("index.html")) {
+    if (window.location.pathname.endsWith("recipes/")) {
         window.location.href = 'sites/feedback.html';
     }
     else {
@@ -52,7 +52,7 @@ buttonFeedback.addEventListener("click", () => {
 });
 
 buttonLogin.addEventListener("click", () => {
-    if (window.location.pathname.endsWith("index.html")) {
+    if (window.location.pathname.endsWith("recipes/")) {
         window.location.href = 'sites/login.html';
     }
     else {
@@ -66,7 +66,7 @@ let buttonMobileGalery = document.getElementById("mobileGalery");
 let buttonMobileLogin = document.getElementById("mobileLogin");
 
 buttonMobileMain.addEventListener("click", () => {
-    if (window.location.pathname.endsWith("index.html")) {
+    if (window.location.pathname.endsWith("recipes/")) {
         window.location.href = 'sites/hauptmahlzeit.html';
     }
     else {
@@ -75,7 +75,7 @@ buttonMobileMain.addEventListener("click", () => {
 });
 
 buttonMobileGalery.addEventListener("click", () => {
-    if (window.location.pathname.endsWith("index.html")) {
+    if (window.location.pathname.endsWith("recipes/")) {
         window.location.href = 'sites/galery.html';
     }
     else {
@@ -84,7 +84,7 @@ buttonMobileGalery.addEventListener("click", () => {
 });
 
 buttonMobileLogin.addEventListener("click", () => {
-    if (window.location.pathname.endsWith("index.html")) {
+    if (window.location.pathname.endsWith("recipes/")) {
         window.location.href = 'sites/login.html';
     }
     else {
