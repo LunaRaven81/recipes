@@ -8,9 +8,9 @@ Es wurde bei der Seite sehr darauf geachtet, dass mit relativen Grössen (rem, e
 ## Farben
 Die Website wird allgemein eher schlicht und mit wenigen Farben gestaltet. Ausser den diversen Violetttönen welche hier aufgelistet sind, wurden noch schwarz und weiss verwendet.
 Die Violettöne:
-* Hellviolett: #CACFFE ["Hellviolett"](../images/style/light_purple.png)
-* Mittelviolett: #5B6AFB ["Mittelviolett"](../images/style/medium_purple.png)
-* Dunkelviolett: #04139E ["Dunkelviolett"](../images/style/dark_purple.png)
+* Hellviolett: #CACFFE !["Hellviolett"](../images/style/light_purple.png)
+* Mittelviolett: #5B6AFB !["Mittelviolett"](../images/style/medium_purple.png)
+* Dunkelviolett: #04139E !["Dunkelviolett"](../images/style/dark_purple.png)
 
 
 ## Hintergrund
