@@ -353,9 +353,6 @@ img {
     .bold {
         font-size: 1rem;
     }
-    html {
-        line-height: 1.2em;
-    }
     footer {
         flex-direction: column;
         flex-wrap: nowrap;
