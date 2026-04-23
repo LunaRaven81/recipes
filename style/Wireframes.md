@@ -2,7 +2,7 @@
 
 
 ## Erklärungen
-Bei meinen Wireframes soll das Grüne gekrabbel jeweils das Logo darstellen. Alles, was blau markiert ist, wird auf der Website mit einem Hintergrundbild befüllt.
+Bei meinen Wireframes soll das grüne Gekrabbel jeweils das Logo darstellen. Alles, was blau markiert ist, wird auf der Website mit einem Hintergrundbild befüllt.
 
 
 ## Index.html
