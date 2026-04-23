@@ -341,8 +341,27 @@ img {
     main {
         width: 84vw;
     }
-    .grid {
-        grid-gap: 10vw;
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .bold {
+        font-size: 1rem;
+    }
+    html {
+        line-height: 1.2em;
+    }
+    footer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
     }
 }
 
@@ -351,7 +370,6 @@ img {
         color: rgb(166, 166, 166);
     }
     h1 {
-        font-size: 2.5rem;
         color: #CACFFE;
     }
     a {
